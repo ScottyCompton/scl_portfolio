@@ -1,27 +1,8 @@
 import React from 'react';
-import './scss/App.scss';
-import Header from './components/Header';
-import Footer from './components/Footer';
-import About from './components/About';
-import Hero from './components/Hero';
-import Toolbox from './components/Toolbox';
-import Portfolio from './components/Portfolio';
-import Testimonials from './components/Testimonials';
-import Contact from './components/Contact';
+import ReactDOM from 'react-dom';
+import 'normalize.css/normalize.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import SCLPortfolio from './components/SCLPortfolio';
+import './styles/styles.scss';
 
-function App() {
-  return (
-    <div className="App">
-      <Header />
-      <Hero />
-      <About />
-      <Toolbox />
-      <Portfolio />
-      <Testimonials />
-      <Contact />
-      <Footer />
-    </div>
-  );
-}
-
-export default App;
+ReactDOM.render(<SCLPortfolio />, document.getElementById('app'));

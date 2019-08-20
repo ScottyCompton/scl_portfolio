@@ -1,0 +1,108 @@
+.portfolio-group__title {
+    color: #404040;
+    text-transform: uppercase;
+    font-weight: bolder;
+}
+
+.portfolio-group__list {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: relative;
+}
+
+.portfolio-list-item {
+    padding: 2%;
+    margin: 2%;
+    box-sizing: border-box;
+    border: 1px solid $white;
+    height: 0;
+    padding-bottom: 20%;
+    position: relative;
+}
+
+.portfolio-list-item__item {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-color: $std-gray;
+    cursor: pointer;
+}
+
+// xl
+@media screen and (min-width: $breakpoint-xl) {
+    .portfolio-group__title {
+        font-size: $title-xl;
+        margin: 40px 10px;
+    }
+    .portfolio-list-item {
+        width: 16%;
+    }
+}
+
+// lg
+@media screen and (min-width: $breakpoint-lg) and (max-width:$breakpoint-xl) {
+    .portfolio-group__title {
+        font-size: $title-lg;
+        margin: 40px 10px;
+    }
+    .portfolio-list-item {
+        width: 21%;
+        padding-bottom: 26.865%
+    }
+}
+
+// med
+@media screen and (min-width: $breakpoint-md) and (max-width:$breakpoint-lg) {
+    .portfolio-group__title {
+        font-size: $title-md;
+        margin: 40px 10px;
+    }
+    .portfolio-list-item {
+        // three items per row
+        width: 29.333%;
+        padding-bottom: 38.333%
+    }
+}
+
+// sm
+@media screen and (min-width: $breakpoint-sm) and (max-width:$breakpoint-md) {
+    .portfolio-group__title {
+        font-size: $title-md;
+        margin: 40px 10px;
+    }
+    .portfolio-list-item {
+        // three items per row
+        width: 46%;
+        padding-bottom: 61.305%
+    }
+}
+
+// xs
+@media screen and (min-width: $breakpoint-xs) and (max-width:$breakpoint-sm) {
+    .portfolio-group__title {
+        font-size: $title-md;
+        margin: 40px 10px;
+    }
+    .portfolio-list-item {
+        width: 46%;
+        padding-bottom: 61.305%
+    }
+}
+
+// mobile
+@media screen and (max-width: $breakpoint-xs) {
+    .portfolio-group__title {
+        font-size: $title-md;
+        margin: 40px 10px;
+    }
+    .portfolio-list-item {
+        // two items per row
+        width: 46%;
+        padding-bottom: 61.305%
+    }
+}
